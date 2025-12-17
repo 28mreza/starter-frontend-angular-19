@@ -1,0 +1,270 @@
+<div class="row">
+    <div class="col-xxl-12">
+        <div class="alert alert-danger alert-dismissible alert-additional fade show" role="alert"
+            style="border-radius: 1rem; overflow: hidden;box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;">
+            <div class="alert-content">
+                <p class="mb-0 fw-bold">This page shows all the data that needs to be approved according to the role
+                    that has
+                    been
+                    assigned to you.</p>
+            </div>
+            <div class="alert-body">
+                <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                        <i class="fa-duotone fa-solid fa-bell-ring fs-16 align-middle"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="alert-heading">Please pay attention to the following things!</h6>
+                        <ul>
+                            <li class="mb-0">Ensure the validity data</li>
+                            <li class="mb-0">Make sure the data matches with the attached document</li>
+                            <li class="mb-0">Ensure the authenticity of the attached documents</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0 text-uppercase">new registration</h5>
+            </div>
+            <div class="card-body">
+                <div class="col-xxl-12">
+                    <div class="mb-3" ngbAccordion activeIds="static-1" [closeOthers]="true"
+                        style="box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;border-radius: 1rem;overflow: hidden;">
+                        <div ngbAccordionItem class="material-shadow" id="static-1">
+                            <div ngbAccordionHeader class="accordion-header border-0 bg-transparent">
+                                <button ngbAccordionButton class="fw-bold d-flex align-items-center" style="gap:12px;">
+                                    <i class="fa-duotone fa-solid fa-filter-list"></i>
+                                    <span>Filter Data</span>
+                                    <span class="px-3 py-1 rounded"
+                                        style="background: #e6f7f7; color: #19b3ae; font-weight: 500;border-radius: 0.75rem;">
+                                        1 Filter Conditions Applied
+                                    </span>
+                                </button>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <!-- Left Column -->
+                                            <div class="col-xxl-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label fw-bold">Create Date</label>
+                                                    <div class="row g-2">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Select Create Date">
+                                                        </div>
+                                                        <div class="col-auto d-flex align-items-center">
+                                                            <span>To</span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Select Create Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label fw-bold">Vendor Name</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter Vendor Name">
+                                                </div>
+                                            </div>
+                                            <!-- Right Column -->
+                                            <div class="col-xxl-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label fw-bold">Vendor Type</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter Vendor Type">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label fw-bold">Category</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter Category">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-end mt-3">
+                                            <button type="reset"
+                                                class="btn btn-outline-danger btn-label waves-effect right waves-light rounded-pill me-2">
+                                                <i
+                                                    class="fa-duotone fa-solid fa-ban label-icon align-middle rounded-pill fs-16 ms-2"></i>
+                                                Reset
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-primary btn-label waves-effect right waves-light rounded-pill">
+                                                <i
+                                                    class="fa-duotone fa-solid fa-list-check label-icon align-middle rounded-pill fs-16 ms-2"></i>
+                                                Apply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-lg-3">
+                                    <div class="search-box">
+                                        <input style="border-radius: 0.75rem;" type="text" class="form-control search"
+                                            placeholder="Search...">
+                                        <i class="ri-search-line search-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="me-2">Show</span>
+                                        <select class="page-size-dropdown rounded-3">
+                                            <option value="1">1</option>
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                            <option value="25">25</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select>
+                                        <span class="ms-2">Data</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-gridjs table-nowrap align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center text-uppercase fw-bold">No</th>
+                                            <th class="text-uppercase fw-bold">Vendor Name</th>
+                                            <th class="text-uppercase fw-bold">Vendor Type</th>
+                                            <th class="text-uppercase fw-bold">Category</th>
+                                            <th class="text-uppercase fw-bold">Created At</th>
+                                            <th class="text-center text-uppercase fw-bold">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td>SOND GLOBAL MIRAI</td>
+                                            <td>CORPORATE</td>
+                                            <td>Indonesian Company</td>
+                                            <td>Tuesday, November 11, 2025 1:58 PM</td>
+                                            <!-- <td class="text-center">
+                                                <button type="button"
+                                                    class="btn btn-primary btn-label waves-effect waves-light rounded-pill"
+                                                    (click)="onValidation(123)">
+                                                    <i
+                                                        class="fa-duotone fa-solid fa-circle-exclamation-check label-icon align-middle rounded-pill fs-16 me-2"></i>
+                                                    Validation
+                                                </button>
+                                            </td> -->
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" (click)="onValidation(123)">
+                                                    <i class="fa-duotone fa-solid fa-circle-exclamation-check"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td>Tunas Inti Persada</td>
+                                            <td>CORPORATE</td>
+                                            <td>Indonesian Company</td>
+                                            <td>Tuesday, November 11, 2025 1:58 PM</td>
+                                            <td class="text-center">
+                                                <button type="button"
+                                                    class="btn btn-primary btn-label waves-effect waves-light rounded-pill">
+                                                    <i
+                                                        class="fa-duotone fa-solid fa-circle-exclamation-check label-icon align-middle rounded-pill fs-16 me-2"></i>
+                                                    Validation
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">3</td>
+                                            <td>WWRC Indonesia</td>
+                                            <td>CORPORATE</td>
+                                            <td>Indonesian Company</td>
+                                            <td>Tuesday, November 11, 2025 1:58 PM</td>
+                                            <td class="text-center">
+                                                <button type="button"
+                                                    class="btn btn-primary btn-label waves-effect waves-light rounded-pill">
+                                                    <i
+                                                        class="fa-duotone fa-solid fa-circle-exclamation-check label-icon align-middle rounded-pill fs-16 me-2"></i>
+                                                    Validation
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">4</td>
+                                            <td>Yayasan Kesejahteraan Hijau Indonesia</td>
+                                            <td>CORPORATE</td>
+                                            <td>Indonesian Company</td>
+                                            <td>Tuesday, November 11, 2025 1:58 PM</td>
+                                            <td class="text-center">
+                                                <button type="button"
+                                                    class="btn btn-primary btn-label waves-effect waves-light rounded-pill">
+                                                    <i
+                                                        class="fa-duotone fa-solid fa-circle-exclamation-check label-icon align-middle rounded-pill fs-16 me-2"></i>
+                                                    Validation
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">5</td>
+                                            <td>Mantap Cipta Bersama</td>
+                                            <td>CORPORATE</td>
+                                            <td>Indonesian Company</td>
+                                            <td>Tuesday, November 11, 2025 1:58 PM</td>
+                                            <td class="text-center">
+                                                <button type="button"
+                                                    class="btn btn-primary btn-label waves-effect waves-light rounded-pill">
+                                                    <i
+                                                        class="fa-duotone fa-solid fa-circle-exclamation-check label-icon align-middle rounded-pill fs-16 me-2"></i>
+                                                    Validation
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-12">
+                    <div class="col-xxl-12">
+                        <div class="card mb-0">
+                            <div class="card-header">
+                                <div class="row justify-content-md-between align-items-center pe-0">
+                                    <div class="col col-sm-6">
+                                        Showing 1 - 10 of 10 entries
+                                    </div>
+                                    <div class="col col-sm-6 p-0">
+                                        <div class="pagination justify-content-end gridjs-pagination me-2">
+                                            <ngb-pagination [collectionSize]="this.pagination.total"
+                                                [(page)]="pagination.page" [pageSize]="pagination.limit" [maxSize]="3"
+                                                [ellipses]="false" [boundaryLinks]="true">
+                                                <ng-template ngbPaginationPrevious>Previous</ng-template>
+                                                <ng-template ngbPaginationNext>Next</ng-template>
+                                            </ngb-pagination>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

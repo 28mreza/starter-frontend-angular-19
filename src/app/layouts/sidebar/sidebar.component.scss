@@ -1,0 +1,86 @@
+// Custom sidebar active state styles
+
+// Style untuk menu item yang bukan dropdown (tidak punya sub-menu)
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+
+            // Style untuk item active yang bukan dropdown
+            &.side-nav-link-ref.active {
+                background: linear-gradient(135deg, var(--vz-primary) 0%, rgba(var(--vz-primary-rgb), 0.85) 100%);
+                color: #ffffff !important;
+                font-weight: 500;
+                border-radius: 1rem;
+                box-shadow: 0 2px 6px rgba(var(--vz-primary-rgb), 0.3);
+                margin: 0.25rem 0.75rem;
+
+                .icon {
+                    color: #ffffff !important;
+                }
+
+                i {
+                    color: #ffffff !important;
+                }
+            }
+        }
+    }
+}
+
+// Style untuk dropdown menu yang active
+.navbar-nav {
+    .nav-item {
+
+        // Style untuk parent dropdown yang active/expanded
+        .is-parent.nav-link {
+            transition: all 0.3s ease;
+
+            &[aria-expanded="true"] {
+                background: linear-gradient(135deg, var(--vz-primary) 0%, rgba(var(--vz-primary-rgb), 0.85) 100%);
+                color: #ffffff !important;
+                font-weight: 500;
+                border-radius: 1rem;
+                box-shadow: 0 2px 6px rgba(var(--vz-primary-rgb), 0.3);
+                margin: 0.25rem 0.75rem;
+
+                .icon {
+                    color: #ffffff !important;
+                }
+
+                i {
+                    color: #ffffff !important;
+                }
+
+                &:after {
+                    color: #ffffff !important;
+                }
+            }
+        }
+
+        // Style untuk sub-menu items yang active
+        .menu-dropdown {
+            .nav-sm {
+                .nav-link {
+                    border-radius: 1rem;
+                    margin: 0.15rem 0.75rem 0.15rem 0.5rem;
+                    transition: all 0.3s ease;
+
+                    &:before {
+                        display: none !important;
+                    }
+
+                    &.active {
+                        background: linear-gradient(90deg, rgba(var(--vz-primary-rgb), 0.15) 0%, rgba(var(--vz-primary-rgb), 0.01) 100%);
+                        color: var(--vz-primary) !important;
+                        font-weight: 500;
+                    }
+
+                    &:hover {
+                        background-color: rgba(var(--vz-primary-rgb), 0.06);
+                    }
+                }
+            }
+        }
+    }
+}
