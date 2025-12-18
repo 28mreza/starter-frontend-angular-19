@@ -4,14 +4,13 @@
             style="border-radius: 1rem; overflow: hidden;box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;">
             <div class="alert-content">
                 <p class="mb-0 fw-bold">This page shows all the data that needs to be approved according to the role
-                    that has
-                    been
-                    assigned to you.</p>
+                    that has been assigned to you.</p>
             </div>
             <div class="alert-body">
                 <div class="d-flex">
                     <div class="flex-shrink-0 me-3">
-                        <i class="fa-duotone fa-solid fa-bell-ring fs-16 align-middle"></i>
+                        <!-- <i class="fa-duotone fa-solid fa-bell-ring fs-16 align-middle"></i> -->
+                        <i class="ri-notification-3-line fs-16 align-middle"></i>
                     </div>
                     <div class="flex-grow-1">
                         <h6 class="alert-heading">Please pay attention to the following things!</h6>
@@ -37,10 +36,10 @@
                         <div ngbAccordionItem class="material-shadow" id="static-1">
                             <div ngbAccordionHeader class="accordion-header border-0 bg-transparent">
                                 <button ngbAccordionButton class="fw-bold d-flex align-items-center" style="gap:12px;">
-                                    <i class="fa-duotone fa-solid fa-filter-list"></i>
+                                    <i class="ri-filter-3-line"></i>
                                     <span>Filter Data</span>
                                     <span class="px-3 py-1 rounded"
-                                        style="background: #e6f7f7; color: #19b3ae; font-weight: 500;border-radius: 0.75rem;">
+                                        style="background: #e6f7f7; color: #19b3ae; font-weight: 500;border-radius: 0.5rem !important;">
                                         1 Filter Conditions Applied
                                     </span>
                                 </button>
@@ -88,16 +87,14 @@
                                             </div>
                                         </div>
                                         <div class="text-end mt-3">
-                                            <button type="reset"
-                                                class="btn btn-outline-danger btn-label waves-effect right waves-light rounded-pill me-2">
-                                                <i
-                                                    class="fa-duotone fa-solid fa-ban label-icon align-middle rounded-pill fs-16 ms-2"></i>
+                                            <button type="button"
+                                                class="btn btn-outline-secondary btn-label waves-effect right waves-light me-2">
+                                                <i class="ri-refresh-line label-icon align-middle fs-16 ms-2"></i>
                                                 Reset
                                             </button>
                                             <button type="button"
-                                                class="btn btn-primary btn-label waves-effect right waves-light rounded-pill">
-                                                <i
-                                                    class="fa-duotone fa-solid fa-list-check label-icon align-middle rounded-pill fs-16 ms-2"></i>
+                                                class="btn btn-success btn-label waves-effect right waves-light">
+                                                <i class="ri-check-double-line label-icon align-middle fs-16 ms-2"></i>
                                                 Apply
                                             </button>
                                         </div>
@@ -121,7 +118,7 @@
                                 <div class="col-lg-auto">
                                     <div class="d-flex align-items-center">
                                         <span class="me-2">Show</span>
-                                        <select class="page-size-dropdown rounded-3">
+                                        <!-- <select class="page-size-dropdown rounded-3">
                                             <option value="1">1</option>
                                             <option value="5">5</option>
                                             <option value="10">10</option>
@@ -130,7 +127,13 @@
                                             <option value="25">25</option>
                                             <option value="50">50</option>
                                             <option value="100">100</option>
-                                        </select>
+                                        </select> -->
+                                        <div class="input-step step-primary">
+                                            <button type="button" class="minus" (click)="lightdecrement()">-</button>
+                                            <input type="number" class="product-quantity" value="{{lightcounter}}"
+                                                min="0" max="100" readonly>
+                                            <button type="button" class="plus" (click)="lightincrement()">+</button>
+                                        </div>
                                         <span class="ms-2">Data</span>
                                     </div>
                                 </div>
@@ -170,9 +173,9 @@
                                                 </button>
                                             </td> -->
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" (click)="onValidation(123)">
-                                                    <i class="fa-duotone fa-solid fa-circle-exclamation-check"></i>
-                                                </button>
+                                                <a href="javascript:void(0);" (click)="onValidation(123)">
+                                                    <i class="ri-information-line fs-24" ngbTooltip="Detail" placement="left"></i>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -182,12 +185,9 @@
                                             <td>Indonesian Company</td>
                                             <td>Tuesday, November 11, 2025 1:58 PM</td>
                                             <td class="text-center">
-                                                <button type="button"
-                                                    class="btn btn-primary btn-label waves-effect waves-light rounded-pill">
-                                                    <i
-                                                        class="fa-duotone fa-solid fa-circle-exclamation-check label-icon align-middle rounded-pill fs-16 me-2"></i>
-                                                    Validation
-                                                </button>
+                                                <a href="javascript:void(0);" (click)="onValidation(123)">
+                                                    <i class="ri-information-line fs-24" ngbTooltip="Detail" placement="left"></i>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -197,12 +197,9 @@
                                             <td>Indonesian Company</td>
                                             <td>Tuesday, November 11, 2025 1:58 PM</td>
                                             <td class="text-center">
-                                                <button type="button"
-                                                    class="btn btn-primary btn-label waves-effect waves-light rounded-pill">
-                                                    <i
-                                                        class="fa-duotone fa-solid fa-circle-exclamation-check label-icon align-middle rounded-pill fs-16 me-2"></i>
-                                                    Validation
-                                                </button>
+                                                <a href="javascript:void(0);" (click)="onValidation(123)">
+                                                    <i class="ri-information-line fs-24" ngbTooltip="Detail" placement="left"></i>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -212,12 +209,9 @@
                                             <td>Indonesian Company</td>
                                             <td>Tuesday, November 11, 2025 1:58 PM</td>
                                             <td class="text-center">
-                                                <button type="button"
-                                                    class="btn btn-primary btn-label waves-effect waves-light rounded-pill">
-                                                    <i
-                                                        class="fa-duotone fa-solid fa-circle-exclamation-check label-icon align-middle rounded-pill fs-16 me-2"></i>
-                                                    Validation
-                                                </button>
+                                                <a href="javascript:void(0);" (click)="onValidation(123)">
+                                                    <i class="ri-information-line fs-24" ngbTooltip="Detail" placement="left"></i>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -227,12 +221,9 @@
                                             <td>Indonesian Company</td>
                                             <td>Tuesday, November 11, 2025 1:58 PM</td>
                                             <td class="text-center">
-                                                <button type="button"
-                                                    class="btn btn-primary btn-label waves-effect waves-light rounded-pill">
-                                                    <i
-                                                        class="fa-duotone fa-solid fa-circle-exclamation-check label-icon align-middle rounded-pill fs-16 me-2"></i>
-                                                    Validation
-                                                </button>
+                                                <a href="javascript:void(0);" (click)="onValidation(123)">
+                                                    <i class="ri-information-line fs-24" ngbTooltip="Detail" placement="left"></i>
+                                                </a>
                                             </td>
                                         </tr>
                                     </tbody>

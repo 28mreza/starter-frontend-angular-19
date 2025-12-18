@@ -592,8 +592,10 @@ $value in $theme-colors {
   }
 
   th {
-    color: $table-color;
-    background-color: rgba(var(--#{$variable-prefix}light-rgb), 0.75);
+    // color: $table-color;
+    // background-color: rgba(var(--#{$variable-prefix}light-rgb), 0.75);
+    color: $white;
+    background-color: $primary;
 
     &.gridjs-th-sort {
 

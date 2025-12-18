@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NgbToastModule, NgbProgressbarModule, NgbAccordionModule, NgbPaginationModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbToastModule, NgbProgressbarModule, NgbAccordionModule, NgbPaginationModule, NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { FlatpickrModule } from 'angularx-flatpickr';
 import { CountUpModule } from 'ngx-countup';
@@ -54,12 +54,14 @@ import { EcommerceModule } from "./ecommerce/ecommerce.module";
     EcommerceModule,
     NgbAccordionModule,
     NgbPaginationModule,
-    NgbNavModule
+    NgbNavModule,
+    NgbTooltipModule
   ],
   exports: [
     NgbAccordionModule,
     NgbPaginationModule,
-    NgbNavModule
+    NgbNavModule,
+    NgbTooltipModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

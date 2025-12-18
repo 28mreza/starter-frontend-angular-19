@@ -16,3 +16,14 @@ File: Custom Css File
 .form-control {
     border-radius: .80rem;
 }
+
+.menu-dropdown {
+    min-width: 300px !important;
+    border-radius: 1rem !important;
+    overflow: hidden !important;
+}
+
+.table-primary thead {
+    background-color: $primary !important;
+    color: $white !important;
+}

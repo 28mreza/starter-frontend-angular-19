@@ -18,7 +18,7 @@
     left: 0;
     right: 0;
     top: 0;
-    height: 320px;
+    height: 250px;
     @media (max-width: 575.98px) {
         height: 445px;
     }
@@ -31,8 +31,10 @@
         top: 0;
         bottom: 0;
         opacity: 0.9;
-        background: $primary;
-        background: linear-gradient(to top, darken($primary, 25%), $primary);
+        // background: $primary;
+        // background: linear-gradient(to top, darken($primary, 25%), $primary);
+        background: #405189;
+        background: linear-gradient(180deg, rgba(64, 81, 137, 1) 50%, rgba(243, 246, 249, 1) 100%);
 
     }
 

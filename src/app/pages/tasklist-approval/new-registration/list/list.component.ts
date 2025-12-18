@@ -21,4 +21,13 @@ export class ListComponent {
   onValidation(data: any) {
     this.router.navigate(['/tasklist-approval/new-registration/validation']);
   }
+
+  lightcounter = 5;
+  lightincrement() {
+    this.lightcounter++;
+  }
+
+  lightdecrement() {
+    this.lightcounter--;
+  }
 }
